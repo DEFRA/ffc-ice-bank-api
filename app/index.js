@@ -11,3 +11,5 @@ process.on('unhandledRejection', (err) => {
 })
 
 init()
+
+module.exports = init
