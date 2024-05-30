@@ -1,9 +1,9 @@
 environment: production
 environmentCode:
-name: ffc-template-node
-namespace: ffc-demo
-workstream: ffc-demo
-image: ffc-template-node
+name: ffc-ice-bank-api
+namespace: ffc-ice
+workstream: ffc-ice
+image: ffc-ice-bank-api
 
 labels:
   component: service
@@ -12,10 +12,10 @@ appInsights:
   connectionString:
 
 containerConfigMap:
-  name: ffc-template-node-config-map
+  name: ffc-ice-bank-api-config-map
 
 containerSecret:
-  name: ffc-template-node-container-secret
+  name: ffc-ice-bank-api-container-secret
   type: Opaque
 
 deployment: {}
@@ -26,6 +26,12 @@ container:
   limitMemory: 100Mi
   limitCpu: 100m
   port: 3000
+  apiKey:
+  d365ApiHost:
+  d365ApiUrl:
+  d365TenantID:
+  d365ClientID:
+  d365ClientSecret:
 
 livenessProbe:
   path: /healthz
