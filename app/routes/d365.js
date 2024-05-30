@@ -7,7 +7,7 @@ module.exports = {
   options: {
     auth: 'apiKey'
   },
-  handler: async (request, h) => {
+  handler: async (request) => {
     try {
       const payload = {
         _request: {
