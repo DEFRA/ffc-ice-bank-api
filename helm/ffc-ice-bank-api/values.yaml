@@ -33,6 +33,11 @@ container:
   d365ClientID:
   d365ClientSecret:
 
+ingress:
+  class: nginx
+  endpoint: ffc-ice-bank-api
+  server: example.com  
+
 livenessProbe:
   path: /healthz
   port: 3000

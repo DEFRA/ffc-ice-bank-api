@@ -1,0 +1,3 @@
+{{- include "ffc-helm-library.azure-ingress" (list . "ffc-ice-bank-api.ingress") -}}
+{{- define "ffc-ice-bank-api.ingress" -}}
+{{- end -}}
