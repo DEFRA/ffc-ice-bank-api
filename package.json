@@ -1,6 +1,6 @@
 {
   "name": "ffc-ice-bank-api",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Microservice responsible for communicating with d365 and returning the response to portal frontend",
   "homepage": "https://github.com/DEFRA/ffc-ice-bank-api",
   "main": "app/index.js",
