@@ -5,6 +5,8 @@ namespace: ffc-ice
 workstream: ffc-ice
 image: ffc-ice-bank-api
 
+workloadIdentity: true
+
 labels:
   component: service
 
